@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return 
+  return "henry"
   
 }
 
@@ -212,7 +212,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código: 
-  return ("hola" + nombre + "!")
+  return ("hola" + "" + nombre + "!")
   
 }
 
