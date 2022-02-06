@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return "henry"
+  return "Henry"
   
 }
 
@@ -163,14 +163,16 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.round (num)
+  return Math.round (num)
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  math.roundceil (num)
+   return Math.ceil (num)
+   
+  
   
 }
 
@@ -204,7 +206,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre + "" + apellido) 
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
   
 }
 
@@ -212,7 +215,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código: 
-  return ("hola" + "" + nombre + "!")
+  return ("Hola" + ' ' + (nombre) + "!");
   
 }
 
@@ -258,15 +261,19 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1)
+  if (letra.length > 1) 
   return "Dato incorrecto"
-  if (letra) [letra === "a", letra=== "e", letra=== "i", letra ==="o", letra=== "u" ]
-  return "Es vocal"
   
 
-  
-  
-}
+  if(letra === "a" || letra ==="e" || letra ==="i" || letra ==="o" || letra === "u")
+
+  return "Es vocal"
+ 
+  if (letra != "a",letra != "e",letra != "i",letra != "o",letra != "u")
+
+  return "Dato incorrecto"
+
+  }
 
 
 
