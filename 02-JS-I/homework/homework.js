@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return
+  return 
   
 }
 
@@ -149,7 +149,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow (nume,3)
+  return Math.pow (num,3)
   
 }
 
@@ -163,14 +163,14 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  math.round (num)
+  return math.round (num)
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  math.ceil (num)
+  math.roundceil (num)
   
 }
 
@@ -188,9 +188,9 @@ function esPositivo(numero) {
   if (numero ===0 )
   return false
   else if (numero > 0)
-  return "es positivo"
+  return "Es positivo"
   else 
-  return "es negativo" 
+  return "Es negativo" 
 }
 
 function agregarSimboloExclamacion(str) {
@@ -204,7 +204,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre + apellido) 
+  return (nombre + "" + apellido) 
   
 }
 
@@ -212,7 +212,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código: 
-  (hola + nombre + "!")
+  return ("hola" + nombre + "!")
   
 }
 
@@ -236,7 +236,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return (base * altura) /3
+  return (base * altura) /2
 
 
 }
@@ -259,9 +259,11 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1)
-  return "dato incorrecto"
-  if (letra) [letra === a, letra=== e, letra=== i, letra ===o, letra=== u ]
-  return "es vocal"
+  return "Dato incorrecto"
+  if (letra) [letra === "a", letra=== "e", letra=== "i", letra ==="o", letra=== "u" ]
+  return "Es vocal"
+  
+
   
   
 }
